@@ -24,12 +24,28 @@
     Sums - 11, 4, 10, 13
     Output - 13
 """
+import re
+
+
+def sum_of_list(list):
+    new_list = []
+
+    for item in list:
+        just_numbers = ''.join(re.findall(r'\d', item))
+        sum_of_numbers = 0
+        for char in just_numbers:
+            sum_of_numbers += int(char)
+        new_list.append(sum_of_numbers)
+
+    return new_list
 
 
 def main():
     """
     Main entry point of program.
     """
+    sums = (sum_of_list(["dh7js4jf", "or2rjvn2w", "h1n36mfl", "a7e6fw"]))
+    print(sums)
     # send array to method that will filter out numbers and return
     # sum the numbers for each array
     # deduce the highest and return that
