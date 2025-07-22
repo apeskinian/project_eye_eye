@@ -20,7 +20,7 @@
     characters.
 
     Example:
-    Input - [ "dh7js4jf", "or2rjvn2w", "h1n36mfl", "a7e6fw" ]
+    Input - ["dh7js4jf", "or2rjvn2w", "h1n36mfl", "a7e6fw"]
     Sums - 11, 4, 10, 13
     Output - 13
 """
