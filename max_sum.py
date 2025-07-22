@@ -28,6 +28,10 @@ import re
 
 
 def sum_of_list(list):
+    """
+    Filters out given list of strings and returns a list of the sums of single
+    numbers found in each string. 
+    """
     new_list = []
 
     for item in list:
