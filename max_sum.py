@@ -23,6 +23,9 @@
     Input - ["dh7js4jf", "or2rjvn2w", "h1n36mfl", "a7e6fw"]
     Sums - 11, 4, 10, 13
     Output - 13
+
+- My assumptions:
+    The input list is always given in a valid format.
 """
 import re
 
@@ -33,7 +36,7 @@ def sum_of_list(list):
     numbers found in each string.
 
     **Assumptions**
-    That the input array is always a valid array.
+    That the input array is always a valid array of strings.
     """
     # create new blank list to return
     new_list = []
