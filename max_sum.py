@@ -30,17 +30,18 @@ import re
 def sum_of_list(list):
     """
     Filters out given list of strings and returns a list of the sums of single
-    numbers found in each string. 
+    numbers found in each string.
     """
+    # create new blank list to return
     new_list = []
-
+    # iterate through list and append sum of each filtered list to `new_list``
     for item in list:
         just_numbers = ''.join(re.findall(r'\d', item))
         sum_of_numbers = 0
         for char in just_numbers:
             sum_of_numbers += int(char)
         new_list.append(sum_of_numbers)
-
+    # return list of sums
     return new_list
 
 
@@ -48,6 +49,7 @@ def main():
     """
     Main entry point of program.
     """
+    # get list of sums
     sums = (sum_of_list(["dh7js4jf", "or2rjvn2w", "h1n36mfl", "a7e6fw"]))
     print(sums)
     # send array to method that will filter out numbers and return
