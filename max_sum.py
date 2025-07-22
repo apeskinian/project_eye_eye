@@ -64,12 +64,13 @@ def main():
     """
     Main entry point of program.
     """
+    input_list = ["dh7js4jf", "or2rjvn2w", "h1n36mfl", "a7e6fw"]
     # send list to get the sums
-    sums = (sum_of_list(["dh7js4jf", "or2rjvn2w", "h1n36mfl", "a7e6fw"]))
+    sums = (sum_of_list(input_list))
     # deduce largest from new sums list
     output = find_largest(sums)
 
-    print(output)
+    print('Largest sum from :', input_list, 'is: ', output)
     # return largest sum from input list
     return output
 
