@@ -31,6 +31,9 @@ def sum_of_list(list):
     """
     Filters out given list of strings and returns a list of the sums of single
     numbers found in each string.
+
+    **Assumptions**
+    That the input array is always a valid array.
     """
     # create new blank list to return
     new_list = []
@@ -45,16 +48,27 @@ def sum_of_list(list):
     return new_list
 
 
+def find_largest(list):
+    """
+    Returns the largest from a given list of numbers.
+    """
+    largest = max(list)
+
+    return largest
+
+
 def main():
     """
     Main entry point of program.
     """
-    # get list of sums
+    # send list to get the sums
     sums = (sum_of_list(["dh7js4jf", "or2rjvn2w", "h1n36mfl", "a7e6fw"]))
-    print(sums)
-    # send array to method that will filter out numbers and return
-    # sum the numbers for each array
-    # deduce the highest and return that
+    # deduce largest from new sums list
+    output = find_largest(sums)
+
+    print(output)
+    # return largest sum from input list
+    return output
 
 
 if __name__ == "__main__":
